@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>One Page Scroll jQuery Plugin</title>
+<link href="http://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.one-page-scroll.js"></script>
+<link rel="stylesheet" href="css/one-page-scroll.css" />
+<style>
+.wrapper {
+	height: 100%;
+    overflow: hidden;
+}
+	
+h1 {
+	font-family:'Homenaje', sans-serif;
+	text-align: center;
+    font-size: 150px;
+	margin: 500px;
+}
+
+.allPages section.pageOne, section.pageThree {
+	background:#F7F0E7;
+	color:#09958E;
+}
+
+.allPages section.pageTwo, section.pageFour {
+	background:#09958E;
+	color:#F7F0E7;
+}
+    
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	  <div class="allPages">
+      <section class="pageOne">
+        <div class="pageBox">
+          <h1>FIRST SCROLL PAGE</h1>
+          <!-- Page content goes here -->
+      	</div>   
+      </section>
+	  <section class="pageTwo">
+	  	<div class="pageBox">
+          <h1>SECOND SCROLL PAGE</h1>
+          <!-- Page content goes here -->
+	    </div>
+      </section>
+	  <section class="pageThree">
+	  	<div class="pageBox">
+          <h1>THIRD SCROLL PAGE</h1>
+          <!-- Page content goes here -->
+  	    </div>
+      </section>
+      <section class="pageFour">
+	  	<div class="pageBox">
+          <h1>FOURTH SCROLL PAGE</h1>
+         <!-- Page content goes here -->
+  	    </div>
+      </section>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$(".allPages").onepage_scroll({
+        loop: true
+	});
+});
+</script>   
+</body>
+</html>
