@@ -65,8 +65,22 @@ h1 {
 <script>
 $(document).ready(function(){
 	$(".allPages").onepage_scroll({
-        loop: true
-	});
+
+        loop: true,
+        //These can be passed into the function. 
+        sectionContainer: "section",
+        easing: "ease",
+        animationTime: 5000,
+        pagination: true,
+        updateURL: false,
+        keyboard: true,
+        beforeMove: null,
+        afterMove: null,
+        loop: true,
+        responsiveFallback: false,
+        direction : 'vertical'
+
+      });
 });
 </script>   
 </body>
